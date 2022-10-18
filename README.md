@@ -224,7 +224,7 @@ impl TryFrom<W<Value>> for String {
 
 ```
 
-From here, we can simply manage our Todos with our TodoBMC struct (backend model controller) in todo_model.rs. We expect an actix-web::Data<SurrealDBRepo> struct to be passed to us via the route, which will manage the queries. We set up when we instantiated SurrealDBRepo in main.rs and cloned it in the app_data() method).
+From here, we can simply manage our Todos with our TodoBMC struct (backend model controller) in todo_model.rs. We expect an actix-web::Data<SurrealDBRepo> struct to be passed to us via the route, which will manage the queries. We set this up when we instantiated SurrealDBRepo in main.rs and cloned it in the app_data() method).
 
 ```rs
 pub struct TodoBMC;
